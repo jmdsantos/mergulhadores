@@ -1,0 +1,62 @@
+package helloworld;
+
+public class Calcula {
+	
+	public Calcula(String op, double vl1, double vl2) {
+		
+		switch (op) {
+		case "S":
+			Soma(vl1, vl2);
+			break;
+		case "U":
+			Subt(vl1, vl2);
+			break;
+		case "M":
+			Mult(vl1, vl2);
+			break;
+		case "D":
+			Divi(vl1, vl2);
+			break;
+		default:
+			break;
+		}
+	}
+	
+
+	public double Soma(double vl1, double vl2) {
+		return vl1 + vl2;
+	}
+	
+	public double Subt(double vl1, double vl2) {
+		return vl1 - vl2;
+	}
+	
+	public double Mult(double vl1, double vl2) {
+		return vl1 * vl2;
+	}
+	
+	public double Divi(double vl1, double vl2) {
+		double res = 0;
+		try {
+			res = vl1 / vl2;
+		} catch (Exception e) {
+			System.out.println("Divisão por zero");
+		}
+		
+		return res;
+	}
+	
+	public void Tabuada(int op) {
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(op * i);
+			
+		}
+	}
+
+
+	@Override
+	public String toString() {
+		return "Calcula [toString()=" + super.toString() + "]";
+	}
+	
+}

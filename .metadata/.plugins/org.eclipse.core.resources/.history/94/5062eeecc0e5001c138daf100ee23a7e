@@ -1,0 +1,52 @@
+package helloworld;
+
+public class Calcula {
+	public Calcula() {};
+
+	public double Operacao(String op, double vl1, double vl2) {
+		double resultado =0;
+		switch (op) {
+		case "S":
+			resultado = Soma(vl1, vl2);
+			break;
+		case "U":
+			resultado = Subt(vl1, vl2);
+			break;
+		case "M":
+			resultado = Mult(vl1, vl2);
+			break;
+		case "D":
+			resultado = Divi(vl1, vl2);
+			break;
+		default:
+			break;
+		}
+		
+		return resultado;
+	}
+	
+
+	public double Soma(double vl1, double vl2) {
+		return vl1 + vl2;
+	}
+	
+	public double Subt(double vl1, double vl2) {
+		return vl1 - vl2;
+	}
+	
+	public double Mult(double vl1, double vl2) {
+		return vl1 * vl2;
+	}
+	
+	public double Divi(double vl1, double vl2) {
+		double res = 0;
+		try {
+			res = vl1 / vl2;
+		} catch (Exception e) {
+			System.out.println("Divisão por zero");
+		}
+		
+		return res;
+	}
+		
+}

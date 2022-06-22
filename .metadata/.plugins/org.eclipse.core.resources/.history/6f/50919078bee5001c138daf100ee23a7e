@@ -1,0 +1,23 @@
+package helloworld;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+		
+		Calcula cal = new Calcula();
+		System.out.println(cal.Calcula("M", 10, 5));
+		/*System.out.println("Adição: "  + cal.Soma(10, 15));
+		System.out.println("Subtração: " + cal.Subt(10, 15));
+		System.out.println("Multiplicação: " + cal.Mult(10, 15));
+		System.out.println("Divisão: " + cal.Divi(10, 0));
+		cal.Tabuada(5);*/
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package helloworld;
+
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		
+		Calcula cal = new Calcula(Funcao.M.name(), (float) 2, (float) 10 );
+		cal.Operacao();
+		ByteBuffer byteBuffer = StandardCharsets.UTF_8.encode(cal.toString());
+		System.out.println(byteBuffer.toString());
+		
+	}
+
+}

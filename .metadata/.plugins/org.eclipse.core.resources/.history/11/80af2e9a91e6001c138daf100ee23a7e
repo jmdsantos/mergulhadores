@@ -1,0 +1,15 @@
+package helloworld;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		
+		Calcula cal = new Calcula();
+		cal.Operacao(Funcao.M.name(), 10, 2);
+		System.out.println(cal.toString());
+		
+		cal.Tabuada(3);
+	}
+
+}

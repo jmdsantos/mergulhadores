@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\_totvs\mergulhadores\interacao\codigos\.metadata\.plugins\org.eclipse.jdt.core
+1339705619.index
+54703828.index
